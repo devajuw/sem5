@@ -1,0 +1,105 @@
+
+<html>
+<head>
+    
+    <title>Frame Layout Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+        }
+        .header {
+            background-color: #4bbb4f;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .main-container {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            background-color: #ffffff;
+            color: #333;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .floating-frame {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 300px;
+            height: 200px;
+            border: 2px solid #333;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        .nav-link {
+            display: block;
+            padding: 10px;
+            margin-bottom: 5px;
+            background-color: #444;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .nav-link:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-frame">
+        <h3>Floating Frame</h3>
+        <p>This frame floats over other content.</p>
+    </div>
+    <div class="header">
+        My Website Header
+    </div>
+    <div class="main-container">
+        <div class="sidebar">
+            <h2>Navigation</h2>
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Services</a>
+            <a href="#" class="nav-link">Contact</a>
+        </div>
+        <div class="content">
+            <h1>Welcome to My Website</h1>
+            <p>This is the main content area. Here you can display articles, images, or other types of content relevant to the selected navigation item.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Praesent commodo tincidunt sapien, non feugiat nulla suscipit non.</p>
+        </div>
+        
+    </div>
+    <div class="footer">
+        &copy; 2024 My Website
+    </div>
+</body>
+</html>

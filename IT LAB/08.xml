@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailwayReservationSystem>
+    <Trains>
+        <Train id="T001" name="Express 101">
+            <Type>Express</Type>
+            <SourceStation code="SRC001">New York</SourceStation>
+            <DestinationStation code="DST001">Boston</DestinationStation>
+            <DepartureTime>2024-08-21T09:00:00</DepartureTime>
+            <ArrivalTime>2024-08-21T15:00:00</ArrivalTime>
+            <Seats>
+                <Seat type="Sleeper" total="100" available="20"/>
+                <Seat type="AC" total="50" available="10"/>
+            </Seats>
+        </Train>
+        <Train id="T002" name="Local 202">
+            <Type>Local</Type>
+            <SourceStation code="SRC002">Chicago</SourceStation>
+            <DestinationStation code="DST002">Detroit</DestinationStation>
+            <DepartureTime>2024-08-21T10:00:00</DepartureTime>
+            <ArrivalTime>2024-08-21T14:00:00</ArrivalTime>
+            <Seats>
+                <Seat type="General" total="200" available="50"/>
+            </Seats>
+        </Train>
+    </Trains>
+    <Stations>
+        <Station code="SRC001" name="New York" location="40.7128,-74.0060"/>
+        <Station code="DST001" name="Boston" location="42.3601,-71.0589"/>
+        <Station code="SRC002" name="Chicago" location="41.8781,-87.6298"/>
+        <Station code="DST002" name="Detroit" location="42.3314,-83.0458"/>
+    </Stations>
+    <Reservations>
+        <Reservation id="R001">
+            <TrainID>T001</TrainID>
+            <Passenger name="John Doe" age="30" gender="M"/>
+            <SeatType>AC</SeatType>
+            <ReservationTime>2024-08-20T08:00:00</ReservationTime>
+            <Status>Confirmed</Status>
+        </Reservation>
+        <Reservation id="R002">
+            <TrainID>T002</TrainID>
+            <Passenger name="Jane Smith" age="25" gender="F"/>
+            <SeatType>General</SeatType>
+            <ReservationTime>2024-08-20T09:30:00</ReservationTime>
+            <Status>Pending</Status>
+        </Reservation>
+    </Reservations>
+</RailwayReservationSystem>

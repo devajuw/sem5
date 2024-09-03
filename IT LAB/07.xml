@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <books>
+        <book id="B001">
+            <title>Programming in C</title>
+            <author id="A001"/>
+            <publisher>McGraw-Hill</publisher>
+            <year>2019</year>
+            <genre>Programming</genre>
+            <copies>10</copies>
+        </book>
+        <book id="B002">
+            <title>Effective Java</title>
+            <author id="A002"/>
+            <publisher>Addison-Wesley</publisher>
+            <year>2018</year>
+            <genre>Programming</genre>
+            <copies>5</copies>
+        </book>
+        <book id="B003">
+            <title>Learning Python</title>
+            <author id="A003"/>
+            <publisher>O'Reilly Media</publisher>
+            <year>2020</year>
+            <genre>Programming</genre>
+            <copies>8</copies>
+        </book>
+        <book id="B004">
+            <title>Internet Technologies</title>
+            <author id="A004"/>
+            <publisher>Springer</publisher>
+            <year>2021</year>
+            <genre>Technology</genre>
+            <copies>6</copies>
+        </book>
+    </books>
+    
+    <authors>
+        <author id="A001">
+            <name>Brian W. Kernighan</name>
+            <nationality>American</nationality>
+        </author>
+        <author id="A002">
+            <name>Joshua Bloch</name>
+            <nationality>American</nationality>
+        </author>
+        <author id="A003">
+            <name>Mark Lutz</name>
+            <nationality>American</nationality>
+        </author>
+        <author id="A004">
+            <name>Ralph Moseley</name>
+            <nationality>British</nationality>
+        </author>
+    </authors>
+</library>

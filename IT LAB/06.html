@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Fare Finder</title>
+</head>
+<body>
+    <h1>Find Railway Fare</h1>
+    <form id="fareForm">
+        <label for="from">From:</label>
+        <input type="text" id="from"  required><br><br>
+        
+        <label for="to">To:</label>
+        <input type="text" id="to"  required><br><br>
+        
+        <button type="button" onclick="calculateFare()">Find Fare</button>
+    </form>
+    
+    <h2 id="result"></h2>
+
+    <script>
+        function calculateFare() {
+            const fare = Math.floor(Math.random() * 100) + 50; // Random fare between 50 and 150
+            const from = document.getElementById('from').value;
+            const to = document.getElementById('to').value;
+            const result = `The fare from ${from} to ${to} is Rs.${fare}.`;
+            document.getElementById('result').innerText = result;
+        }
+    </script>
+</body>
+</html>

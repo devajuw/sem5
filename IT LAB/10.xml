@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE employees SYSTEM "employee.dtd">
+<employees>
+    <employee id="101">
+        <firstname id="name">John</firstname>
+        <lastname>Doe</lastname>
+        <title>Software Engineer</title>
+        <department>Development</department>
+        <salary>60000</salary>
+    </employee>
+    <employee id="102">
+        <firstname id="name">Jane</firstname>
+        <lastname>Smith</lastname>
+        <title>Project Manager</title>
+        <department>Management</department>
+        <salary>75000</salary>
+    </employee>
+    <employee id="103">
+        <firstname id="name">Emily</firstname>
+        <lastname>Jones</lastname>
+        <title>Data Analyst</title>
+        <department>Analytics</department>
+        <salary>65000</salary>
+    </employee>
+</employees>
