@@ -1,16 +1,17 @@
+
 {
     "version": "2.0.0",
     "tasks": [
         {
             "type": "cppbuild",
             "label": "C/C++: g++.exe build active file",
-            "command": "C:/MinGW/bin/g++.exe", 
+            "command": "C:\\MinGW\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}.exe", 
+                "${workspaceFolder}/executables/${fileBasenameNoExtension}.exe",
                 "-lbgi",
                 "-lgdi32",
                 "-lcomdlg32",
@@ -28,7 +29,7 @@
                 "kind": "build",
                 "isDefault": true
             },
-            "detail": "compiler: C:/MinGW/bin/g++.exe"
+            "detail": "compiler: C:\\MinGW\\bin\\g++.exe"
         }
     ]
 }
