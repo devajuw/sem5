@@ -7,7 +7,7 @@ int main()
     int height = GetSystemMetrics(SM_CYSCREEN);
     int width = GetSystemMetrics(SM_CXSCREEN);
     initwindow(width, height, "", -8, -8);
- setbkcolor(12);
+ setbkcolor(11);
     cleardevice();
     outtextxy(570, 670, "ELLIPSE");
     ellipse(500, 500, 0, 360, 560, 265);
@@ -21,7 +21,6 @@ int main()
     outtextxy(330, 200, "CIRCLE");
     circle(260, 200, 50);
    
- 
     int c;
     c = getbkcolor();
     printf("%d", c);
